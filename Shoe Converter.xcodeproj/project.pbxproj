@@ -10,8 +10,8 @@
 		13244F1A1C9F6CED0023C398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13244F191C9F6CED0023C398 /* AppDelegate.swift */; };
 		13244F1C1C9F6CED0023C398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13244F1B1C9F6CED0023C398 /* ViewController.swift */; };
 		13244F1F1C9F6CED0023C398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13244F1D1C9F6CED0023C398 /* Main.storyboard */; };
-		13244F211C9F6CED0023C398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13244F201C9F6CED0023C398 /* Assets.xcassets */; };
 		13244F241C9F6CED0023C398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13244F221C9F6CED0023C398 /* LaunchScreen.storyboard */; };
+		13244F2C1C9F7B1E0023C398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13244F2B1C9F7B1E0023C398 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +19,9 @@
 		13244F191C9F6CED0023C398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13244F1B1C9F6CED0023C398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13244F1E1C9F6CED0023C398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		13244F201C9F6CED0023C398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13244F231C9F6CED0023C398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13244F251C9F6CED0023C398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13244F2B1C9F7B1E0023C398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +57,9 @@
 				13244F191C9F6CED0023C398 /* AppDelegate.swift */,
 				13244F1B1C9F6CED0023C398 /* ViewController.swift */,
 				13244F1D1C9F6CED0023C398 /* Main.storyboard */,
-				13244F201C9F6CED0023C398 /* Assets.xcassets */,
 				13244F221C9F6CED0023C398 /* LaunchScreen.storyboard */,
 				13244F251C9F6CED0023C398 /* Info.plist */,
+				13244F2B1C9F7B1E0023C398 /* Assets.xcassets */,
 			);
 			path = "Shoe Converter";
 			sourceTree = "<group>";
@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					13244F151C9F6CED0023C398 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = RY4LKVN272;
 					};
 				};
 			};
@@ -123,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13244F241C9F6CED0023C398 /* LaunchScreen.storyboard in Resources */,
-				13244F211C9F6CED0023C398 /* Assets.xcassets in Resources */,
+				13244F2C1C9F7B1E0023C398 /* Assets.xcassets in Resources */,
 				13244F1F1C9F6CED0023C398 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +250,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Shoe Converter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Shoe-Converter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -260,10 +265,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Shoe Converter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Shoe-Converter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -286,6 +295,7 @@
 				13244F2A1C9F6CED0023C398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
