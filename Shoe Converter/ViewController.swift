@@ -21,20 +21,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        view.backgroundImage = UIImage(UIImage.named: "background")
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         
         mensTextField.placeholder = "Enter US Shoe Size Here:"
+        mensShoeConversionLabel.textColor = UIColor.whiteColor()
         mensTextField.keyboardType = UIKeyboardType.NumberPad
         mensShoeConversionLabel.text = "Men's Shoe Conversion"
         mensTextField.textColor = UIColor.redColor()
         
+        
         womansTextField.placeholder = "Enter US Shoe Size Here:"
+        womansShoeConversionLabel.textColor = UIColor.whiteColor()
         womansTextField.keyboardType = UIKeyboardType.NumberPad
         womansShoeConversionLabel.text = "Woman's Shoe Conversion"
         womansTextField.textColor = UIColor.redColor()
         
         detailLabel.text = "Please enter Men's Shoe Size as whole numbers. Woman's shoes size may be entered as half sizes"
-        detailLabel.textColor = UIColor.darkGrayColor()
+        detailLabel.textColor = UIColor.whiteColor()
+        
 
         
     }
